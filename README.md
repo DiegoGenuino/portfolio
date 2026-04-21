@@ -73,3 +73,18 @@ export default defineConfig([
   },
 ])
 ```
+
+## Google Analytics (GA4)
+
+To enable Google Analytics in this project:
+
+1. Create a file named `.env.local` in the project root.
+2. Add your GA4 Measurement ID:
+
+```bash
+VITE_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+```
+
+3. Restart the dev server.
+
+The app initializes GA automatically from `src/main.tsx` using `src/analytics.ts`.
